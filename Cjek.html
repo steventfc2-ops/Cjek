@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Cjek - Transportasi Online</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background-color: #f5f7fa;
+            color: #222;
+        }
+
+        /* Header */
+        header {
+            background-color: #ffff00;
+            color: rgb(0, 0, 0);
+            padding: 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 32px;
+        }
+
+        header p {
+            margin-top: 5px;
+            font-size: 14px;
+        }
+
+        /* Main */
+        main {
+            max-width: 500px;
+            margin: 40px auto;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .welcome {
+            margin-bottom: 30px;
+        }
+
+        .welcome h2 {
+            font-size: 25px;
+            margin-bottom: 10px;
+        }
+
+        .welcome p {
+            color: #666;
+        }
+
+        /* Fitur */
+        .fitur-container {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .fitur-button {
+            width: 150px;
+            height: 150px;
+            border: none;
+            border-radius: 15px;
+            background-color: white;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            cursor: pointer;
+            transition: 0.2s;
+        }
+
+        .fitur-button:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+        }
+
+        .fitur-icon {
+            font-size: 45px;
+            margin-bottom: 10px;
+        }
+
+        .fitur-button h3 {
+            color: #00a86b;
+            font-size: 20px;
+        }
+
+        .fitur-button p {
+            margin-top: 5px;
+            color: #777;
+            font-size: 12px;
+        }
+
+        /* Footer */
+        footer {
+            margin-top: 50px;
+            padding: 20px;
+            text-align: center;
+            color: #888;
+            font-size: 13px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+        <h1>Cjek</h1>
+        <p>Teman perjalananmu</p>
+    </header>
+
+    <!-- Isi halaman -->
+    <main>
+
+        <div class="welcome">
+            <h2>Selamat Datang di Cjek!</h2>
+            <p>Pilih layanan yang kamu butuhkan</p>
+        </div>
+
+        <div class="fitur-container">
+
+            
+            <button class="fitur-button" onclick="bukaHalaman('Crider')">
+                <div class="fitur-icon">🏍️</div>
+                <h3>Crider</h3>
+                <p>Ojek online</p>
+            </button>
+
+           
+            <button class="fitur-button" onclick="bukaHalaman('CarC')">
+                <div class="fitur-icon">🚗</div>
+                <h3>CarC</h3>
+                <p>Transportasi mobil</p>
+            </button>
+          
+            <button class="fitur-button" onclick="bukaHalaman('Cfood')">
+                <div class="fitur-icon">🚗</div>
+                <h3>Cfood</h3>
+                <p>Pesanan Makanan</p>
+        </div>
+
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        &copy; 2026 Cjek. Semua hak dilindungi.
+    </footer>
+
+    <script>
+        function bukaHalaman(namaFitur) {
+            // Untuk sementara halaman masih kosong
+            window.location.href = "kosong.html";
+        }
+    </script>
+
+</body>
+</html>
